@@ -6,13 +6,20 @@
   <title>Construsul - Locadora de Equipamentos</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-    header { background: #004080; color: white; padding: 20px; text-align: center; }
-    section { padding: 20px; max-width: 800px; margin: auto; background: white; margin-top: 20px; border-radius: 8px; }
-    h2 { color: #004080; }
+    header { background: #004080; color: white; padding: 40px 20px; text-align: center; }
+    header img { max-width: 100%; height: auto; border-radius: 8px; margin-top: 20px; }
+    section { padding: 20px; max-width: 900px; margin: auto; background: white; margin-top: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h2 { color: #004080; margin-top: 30px; }
     ul { list-style: none; padding: 0; }
     ul li::before { content: "🔧 "; }
     .cta { text-align: center; margin-top: 30px; }
-    .cta a { background: #004080; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+    .cta a { background: #004080; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; }
+    .gallery { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 20px; justify-content: center; }
+    .gallery img { width: 100%; max-width: 280px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.2); }
+    form { margin-top: 20px; }
+    input, textarea, button { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em; }
+    button { background-color: #004080; color: white; border: none; cursor: pointer; margin-top: 10px; }
+    button:hover { background-color: #003060; }
     footer { text-align: center; padding: 20px; font-size: 0.9em; color: #666; }
   </style>
 </head>
@@ -20,6 +27,7 @@
   <header>
     <h1>Construsul</h1>
     <p>Locadora de Equipamentos para Construção Civil</p>
+    <img src="https://www.casadoandaime.com.br/imagens/informacoes/locacao-andaimes-betoneiras-01.jpg" alt="Equipamentos em obra" />
   </header>
 
   <section>
@@ -32,6 +40,12 @@
       <li>Máquinas de corte e perfuração</li>
       <li>Equipamentos de proteção individual (EPIs)</li>
     </ul>
+
+    <div class="gallery">
+      <img src="https://loccivi.com.br/wp-content/uploads/2022/08/loccivi-blog_11-equipamentos-de-construcao-civil-que-nao-podem-faltar-na-sua-obra.jpg" alt="Equipamentos Loccivi" />
+      <img src="https://mestredaobramanaus.com.br/wp-content/uploads/2024/04/394264528_6380914888681013_7322522931472164552_n-e1701886957902.jpg" alt="Ferramentas de obra" />
+      <img src="https://interlocequipamentos.com.br/wp-content/uploads/2024/04/interloc.jpg" alt="Locadora InterLoc" />
+    </div>
 
     <h2>Por que escolher a Construsul?</h2>
     <ul>
@@ -48,8 +62,22 @@
        📧 E-mail: contato@construsul.com.br<br />
        🕒 Atendimento: Segunda a sábado, das 7h às 18h</p>
 
+    <h2>Solicite um Orçamento</h2>
+    <form action="https://formsubmit.co/seuemail@dominio.com" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
     <div class="cta">
-      <a href="#">Solicitar Orçamento Agora</a>
+      <a href="https://wa.me/5519999999999" target="_blank">💬 Fale pelo WhatsApp</a>
     </div>
   </section>
 
